@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Project 87</title>
+</head>
+<body>
+
+<p>DECLARING NUMBERS ARRAY
+<h4 id="num"></h4>
+</p>
+<hr>
+
+<p>FINDING THE LENGTH OF THE ARRAY
+<h4 id="lengthOfArray"></h4>
+</p>
+<hr>
+
+<p>Odd numbers
+    <h4 id="oddNum"></h4>
+    </p>
+    <hr>
+
+    <p>Even numbers
+        <h4 id="evenNum"></h4>
+        </p>
+        <hr>
+
+<script>
+
+var num=[0,1,2,3,4,5,6,7,8,9,10];
+console.log(num);
+document.getElementById("num").innerHTML=num;
+
+console.log("LENGTH OF ARRAY");
+var l1=num.length;
+console.log(l1);
+document.getElementById("lengthOfArray").innerHTML=l1;
+
+var oddNum="";
+console.log("Odd numbers are");
+for(var i=1;i<=l1;i+=2){
+console.log(i);
+oddNum=oddNum+" "+i;
+document.getElementById("oddNum").innerHTML=oddNum;
+}
+
+var evenNum="";
+console.log("Even numbers are");
+for(var k=0;k<=l1;k+=2){
+console.log(k);
+evenNum=evenNum+" "+k;
+document.getElementById("evenNum").innerHTML=evenNum;
+}
+
+console.log("MULTIPLICATION");
+
+var multiplication=[0,1,2,3,4,5,6,7,8,9,10];
+console.log(multiplication);
+
+console.log("LENGTH OF ARRAY");
+var l2=multiplication.length;
+console.log(l2);
+
+console.log("Table of 2");
+for(var a=0;a<=l2;a++){
+console.log(multiplication,2*a);
+}
+
+console.log("Table of 3");
+for(var v=0;v<=l2;v++){
+console.log(multiplication,3*v);
+}
+
+console.log("ADDITION");
+
+var addition=[0,1,2,3,4,5,6,7,8,9,10];
+console.log(addition);
+
+console.log("LENGTH OF ARRAY")
+var l3=addition.length;
+console.log(l3);
+
+console.log("On adding 5");
+for(var x=0;x<=l3;x++){
+console.log(addition,x+5);
+
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
